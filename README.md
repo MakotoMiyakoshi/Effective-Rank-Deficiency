@@ -4,7 +4,7 @@
 
 Sometimes EEGLAB's infomax ICA (called by the *runica()* function) fails in a weird way, refered here as a ghost IC. 
 
-Example of a ghost IC:
+Example of a ghost IC illustrated by power spectral density (top) and scalp topogrpahy (bottom):
 
 <img src="https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_spectra.png" width="300">
 <img src="https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_topo.png" width="300">
