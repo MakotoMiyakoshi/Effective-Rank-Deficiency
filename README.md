@@ -1,16 +1,16 @@
-# Effective-Rank-Deficiency
+# The Effective-Rank-Deficiency problem when using ICA in EEGLAB
 
 ### Description of the problem (07/16/2021 updated)
 
-Sometimes EEGLAB's infomax ICA (called by runica) fails in a weird way, refered here as a ghost IC. 
+Sometimes EEGLAB's infomax ICA (called by the *runica()* function) fails in a weird way, refered here as a ghost IC. 
 One of such examples can be seen here [1]. 
 
 The ghost IC is caused by running ICA on rank-deficient data. 
 However, even if the data is not exactly rank deficient, if the smallest eigenvalue is smaller than a threshold value (near-zero value), the same issue occurs. 
 A near-zero eigenvalue means that two lines are quasi parallel, but not exactly. This is a typical ill-conditioned setup. 
-While Matlab rank() function can calculate the smallest eigenvalue down to 1E-16, our ICA algorithm starts to fail around 1E-7 (and below).
+While Matlab's *rank()* function can calculate the smallest eigenvalue down to 1E-16, our ICA algorithm starts to fail around 1E-7 (and below).
 The exact threshold where the issue starts is unknown, which is the first goal of the current study. 
-Hence, using Matlab rank() to count the number of eigenvalues does not work. Instead, one must evaluate the smallest eigenvalue of the data. 
+Hence, using Matlab *rank()* to count the number of eigenvalues does not work. Instead, one must evaluate the smallest eigenvalue of the data. 
 
 In linear algebra, the problem is described as follows: 
 The larger the condition number 
