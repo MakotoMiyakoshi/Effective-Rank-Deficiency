@@ -6,8 +6,8 @@ Sometimes EEGLAB's infomax ICA (called by the *runica()* function) fails in a we
 
 Example of a ghost IC illustrated by power spectral density (top) and scalp topogrpahy (bottom):
 
-<img src="https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_spectra_cropped.png" width="400">
-<img src="https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_topo.png" width="400">
+<img src="https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_spectra_cropped.png" width="200">
+<img src="https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_topo.png" width="200">
 
 The ghost IC is caused by running ICA on rank-deficient data. 
 However, even if the data is not exactly rank deficient, if the smallest eigenvalue is smaller than a threshold value (near-zero value), the same issue occurs. 
