@@ -14,7 +14,7 @@ Hence, using Matlab rank() to count the number of eigenvalues does not work. Ins
 
 In linear algebra, the problem is described as follows: 
 The larger the condition number 
-The condition number $\sigma{\max(a)}$ [INSERT EQUATION], where [INSERT EQUATION] is the maximum singular value of [INSERT EQUATION] and [INSERT EQUATION] is the minimum singular value of [INSERT EQUATION]. 
+The condition number $^\sigma{\max(A)}$ [INSERT EQUATION], where [INSERT EQUATION] is the maximum singular value of [INSERT EQUATION] and [INSERT EQUATION] is the minimum singular value of [INSERT EQUATION]. 
 The larger the condition number is, the more ill the data is and close to singularity, suggesting ICA is more likely to fail.
 
 Important note: artifact subspace reconstruction (ASR) will also fail if the input data is not full-ranked!
