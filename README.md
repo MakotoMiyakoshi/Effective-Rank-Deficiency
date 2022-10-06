@@ -19,8 +19,8 @@ The larger the condition number is, the more ill the data is and close to singul
 Important note: artifact subspace reconstruction (ASR) will also fail if the input data is not full-ranked!
 
 See below for an example:
-![alt text](https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_spectra.png = 250x250)
-![alt text](https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_topo.png = 250x250)
+![image](https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_spectra.png = 250x250)
+![image](https://github.com/amisepa/Effective-Rank-Deficiency/blob/main/illustrations/ghost_topo.png = 250x250)
 
 ### 3 known scenarios that produce ghost ICs
 
